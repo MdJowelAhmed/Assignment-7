@@ -1,0 +1,57 @@
+[
+    {
+      "id": "1",
+      "name": "Lemon Garlic Roast Chicken",
+      "short_description": "A succulent roast chicken infused with zesty lemon and garlic flavors.",
+      "ingredients": ["1 whole chicken (about 1.8 kg)", "4 cloves garlic, minced", "2 lemons, sliced", "2 tbsp olive oil", "1 tsp salt", "1/2 tsp black pepper"],
+      "preparing_time": "1 hour",
+      "calories": "380 calories",
+      "image": "https://example.com/lemon_garlic_roast_chicken.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Vegetable Stir Fry",
+      "short_description": "A colorful medley of fresh vegetables stir-fried to perfection.",
+      "ingredients": ["200g broccoli florets", "150g bell peppers, sliced", "100g carrots, julienned", "100g snow peas", "120ml soy sauce", "2 cloves garlic, minced", "2 tbsp vegetable oil"],
+      "preparing_time": "25 minutes",
+      "calories": "250 calories",
+      "image": "https://example.com/vegetable_stir_fry.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Classic Margherita Pizza",
+      "short_description": "An Italian favorite featuring a simple yet delicious combination of tomatoes, mozzarella, and basil.",
+      "ingredients": ["1 pizza dough", "200g fresh mozzarella, sliced", "2 tomatoes, thinly sliced", "Handful of fresh basil leaves", "2 tbsp olive oil", "Salt and pepper to taste"],
+      "preparing_time": "35 minutes",
+      "calories": "320 calories",
+      "image": "https://example.com/margherita_pizza.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Spaghetti Carbonara",
+      "short_description": "A creamy pasta dish made with eggs, cheese, pancetta, and black pepper.",
+      "ingredients": ["400g spaghetti", "150g pancetta or bacon, diced", "3 large eggs", "50g grated Parmesan cheese", "2 cloves garlic, minced", "Salt and black pepper to taste"],
+      "preparing_time": "20 minutes",
+      "calories": "450 calories",
+      "image": "https://example.com/spaghetti_carbonara.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Grilled Salmon with Asparagus",
+      "short_description": "A healthy and flavorful dish featuring grilled salmon fillets served with tender asparagus spears.",
+      "ingredients": ["4 salmon fillets", "300g asparagus spears", "2 tbsp olive oil", "1 lemon, sliced", "2 cloves garlic, minced", "Salt and pepper to taste"],
+      "preparing_time": "30 minutes",
+      "calories": "320 calories",
+      "image": "https://example.com/grilled_salmon_asparagus.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Chocolate Chip Cookies",
+      "short_description": "Classic homemade cookies loaded with chocolate chips for the perfect sweet treat.",
+      "ingredients": ["200g all-purpose flour", "150g unsalted butter, softened", "100g brown sugar", "100g granulated sugar", "1 egg", "1 tsp vanilla extract", "150g chocolate chips"],
+      "preparing_time": "45 minutes",
+      "calories": "150 calories",
+      "image": "https://example.com/chocolate_chip_cookies.jpg"
+    }
+  ]
+  
