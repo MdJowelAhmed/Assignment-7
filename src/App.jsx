@@ -55,7 +55,7 @@ function App() {
         <p className=' text-xl'>Our food is very testy food.Our customers  is satisfy for our  service and food quality.<br />  We always be care full our  food quality.You advance thanks</p>
       </div>
       <div className='flex flex-col lg:flex-row m-5 lg:m-12'>
-        <div className='grid grid-cols-1 lg:grid-cols-2 w-3/5 gap-5 p-4 shadow-xl m-4'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 lg:w-3/5 gap-5 p-4 shadow-xl m-4'>
           {
             foods.map((food, idx) => <Foods key={idx} handleWantToCook={handleWantToCook} food={food}></Foods>)
           }
