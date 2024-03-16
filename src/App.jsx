@@ -21,7 +21,6 @@ function App() {
   }, [])
 
   const handleWantToCook = (cooking) => {
-    console.log(cooking)
     const isExits = ready.find(item => item.id == cooking.id);
     if (!isExits) {
       setReady([...ready, cooking])
@@ -31,14 +30,20 @@ function App() {
     }
   }
 
-  const handleDelete=(id)=>{
-   const newReady=ready.filter(item=> item.id !==id);
+  const handleDelete=(cook)=>{
+   const newReady=ready.filter(item=> item !==cook);
    setReady(newReady)
+  //  const newFinal = final.find(item => item.id===id.id);
+  //  setFinal([...newReady,id])
+  //  if(newFinal){
+    setFinal([...final,cook])
+
+  //  }
+  //   console.log(newFinal)
+  //   // setFinal(newFinal)
     
   }
-  const handlePrepare=(cook)=>{
-
-  }
+  console.log(final)
 
   return (
     <>
@@ -77,14 +82,14 @@ function App() {
               {
                 ready.map((item, idx) => (
                   <div key={idx}>
-                    <table className="table ">
+                    <table className="table bg-slate-400 ">
                       <thead>
                         <tr className=''>
                           <p>{idx + 1} </p>
                           <td>{item.name.slice(0, 13)} </td>
                           <td>{item.preparing_time}</td>
                           <td>{item.calories} </td>
-                          <button onClick={()=>handleDelete(item.id)} className="btn btn-accent">Preparing</button>
+                          <button onClick={()=>handleDelete(item)} className="btn btn-accent">Preparing</button>
                         </tr>
                       </thead>
                     </table>
@@ -94,8 +99,11 @@ function App() {
               }
             </div>
           </div>
+
+          {/* prepared section  */} 
+
           <div>
-            <h2 className='text-3xl font-semibold text-center mt-8'>Currently Cooking :</h2>
+            <h2 className='text-3xl font-semibold text-center mt-8'>Currently Cooking :{final.length} </h2>
             <div>
               <table className="table ">
                 <thead>
@@ -107,16 +115,16 @@ function App() {
                 </thead>
               </table>
             </div>
-            <div id='hide' className='hidden'>
+            <div id='hide' className=''>
               {
-                ready.map((item, idx) => (
+                final.map((item, idx) => (
                   <div key={idx}>
                     <table className="table ">
                       <thead>
                         <tr className=''>
-                          <td>{item.name.slice(0, 13)} </td>
-                          <td>{item.preparing_time}</td>
-                          <td>{item.calories} </td>
+                          <td>{item?.name?.slice(0, 13)} </td>
+                          <td>{item?.preparing_time}</td>
+                          <td>{item?.calories} </td>
                          
                         </tr>
                       </thead>
