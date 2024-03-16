@@ -1,5 +1,7 @@
 import { MdAccessTime } from "react-icons/md";
 import PropTypes from 'prop-types'
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 // import Cooking from "../Cooking/Cooking";
 // import Cooking from "../Cooking/Cooking";
 
@@ -39,7 +41,7 @@ const Foods = ({food,handleWantToCook}) => {
         </div>
        
         <button onClick={()=>handleWantToCook(food)} className="btn btn-success">Want to cook</button>
-
+        <ToastContainer />
     </div>
   )
 }

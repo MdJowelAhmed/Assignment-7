@@ -4,11 +4,15 @@ import './App.css'
 import Banner from './Components/Banner/Banner'
 import Header from './Components/Header/Header'
 import Foods from './Components/Foods/Foods'
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+import { document } from 'postcss'
 // import Function from './Components/Function/Function'
 
 function App() {
   const [foods, setFoods] = useState([])
-  const [ready,setReady]=useState([])
+  const [ready, setReady] = useState([])
+  const [final,setFinal]=useState([])
 
   useEffect(() => {
     fetch('fakeData.json')
@@ -18,14 +22,22 @@ function App() {
 
   const handleWantToCook = (cooking) => {
     console.log(cooking)
-    // const newReady = [...ready, cooking]
-    const isExits=ready.find(item=> item.id==cooking.id);
-    if(!isExits){
-      setReady([...ready,cooking])
+    const isExits = ready.find(item => item.id == cooking.id);
+    if (!isExits) {
+      setReady([...ready, cooking])
     }
-    else{
-      alert('already have')
+    else {
+      toast("Already have");
     }
+  }
+
+  const handleDelete=(id)=>{
+   const newReady=ready.filter(item=> item.id !==id);
+   setReady(newReady)
+    
+  }
+  const handlePrepare=(cook)=>{
+
   }
 
   return (
@@ -44,12 +56,12 @@ function App() {
           }
         </div>
 
-          {/* <Function></Function> */}
+       
         {/* display */}
 
         <div className='w2/5 ml-10 p-6'>
           <div>
-            <h2 className='text-3xl font-semibold text-center'>Want to Cook: </h2>
+            <h2 className='text-3xl font-semibold text-center'>Want to Cook:{ready.length} </h2>
             <div>
               <table className="table ">
                 <thead>
@@ -62,23 +74,57 @@ function App() {
               </table>
             </div>
             <div>
-            {
-             ready.map((item,idx) =>(
-              <div key={idx}>
-               <table className="table ">
+              {
+                ready.map((item, idx) => (
+                  <div key={idx}>
+                    <table className="table ">
+                      <thead>
+                        <tr className=''>
+                          <p>{idx + 1} </p>
+                          <td>{item.name.slice(0, 13)} </td>
+                          <td>{item.preparing_time}</td>
+                          <td>{item.calories} </td>
+                          <button onClick={()=>handleDelete(item.id)} className="btn btn-accent">Preparing</button>
+                        </tr>
+                      </thead>
+                    </table>
+
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+          <div>
+            <h2 className='text-3xl font-semibold text-center mt-8'>Currently Cooking :</h2>
+            <div>
+              <table className="table ">
                 <thead>
-                  <tr className=''>
-                    <td>{item.name.slice(0,13)} </td>
-                    <td>{item.preparing_time}</td>
-                    <td>{item.calories} </td>
-                    <button className="btn btn-accent">Preparing</button>
+                  <tr className='text-xl'>
+                    <th>Name</th>
+                    <th>Times</th>
+                    <th>Calories</th>
                   </tr>
                 </thead>
               </table>
-                
-              </div>
-             ))
-            }
+            </div>
+            <div id='hide' className='hidden'>
+              {
+                ready.map((item, idx) => (
+                  <div key={idx}>
+                    <table className="table ">
+                      <thead>
+                        <tr className=''>
+                          <td>{item.name.slice(0, 13)} </td>
+                          <td>{item.preparing_time}</td>
+                          <td>{item.calories} </td>
+                         
+                        </tr>
+                      </thead>
+                    </table>
+
+                  </div>
+                ))
+              }
             </div>
           </div>
         </div>
