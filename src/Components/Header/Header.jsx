@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const Header = props => {
   return (
-    <div className='lg:m-12'>
+    <div className=' lg:m-12'>
         <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
@@ -13,7 +13,7 @@ const Header = props => {
       </div>
       
     </div>
-    <a className="btn btn-ghost text-3xl font-bold">Cooking Testy Food</a>
+    <a className="btn btn-ghost text-sm lg:text-3xl font-bold">Testy Food</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -25,12 +25,12 @@ const Header = props => {
         </details>
       </li>
       <li><a>About</a></li>
-      <li><a>Contrack us</a></li>
+      <li><a>Search</a></li>
     </ul>
   </div>
   <div className="navbar-end">
-  <input type="text" placeholder="Search" className="input input-bordered input-primary" />
-    <a className="text-6xl"><RxAvatar></RxAvatar></a>
+  <input type="text" placeholder="Search" className="input input-bordered input-primary w-28 lg:w-48" />
+    <a className="text-6xl lg:ml-5"><RxAvatar></RxAvatar></a>
   </div>
 </div>
     </div>

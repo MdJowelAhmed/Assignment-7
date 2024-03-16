@@ -4,9 +4,9 @@
       "name": "Lemon Garlic Roast Chicken",
       "short_description": "A succulent roast chicken infused with zesty lemon and garlic flavors.",
       "ingredients": ["1 whole chicken (about 1.8 kg)", "4 cloves garlic, minced", "2 lemons, sliced", "2 tbsp olive oil", "1 tsp salt", "1/2 tsp black pepper"],
-      "preparing_time": "1 hour",
+      "preparing_time": "40 min",
       "calories": "380 calories",
-      "image": "https://images.unsplash.com/photo-1610057099431-d73a1c9d2f2f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "image": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": "2",
@@ -20,7 +20,7 @@
     {
       "id": "3",
       "name": "Classic Margherita Pizza",
-      "short_description": "An Italian favorite featuring a simple yet delicious combination of tomatoes, mozzarella, and basil.",
+      "short_description": "An Italian favorite featuring a simple yet delicious combination of tomatoes, .",
       "ingredients": ["1 pizza dough", "200g fresh mozzarella, sliced", "2 tomatoes, thinly sliced", "Handful of fresh basil leaves", "2 tbsp olive oil", "Salt and pepper to taste"],
       "preparing_time": "35 minutes",
       "calories": "320 calories",
@@ -38,11 +38,11 @@
     {
       "id": "5",
       "name": "Grilled Salmon with Asparagus",
-      "short_description": "A healthy and flavorful dish featuring grilled salmon fillets served with tender asparagus spears.",
+      "short_description": "A healthy and flavorful dish featuring grilled salmon fillets served with .",
       "ingredients": ["4 salmon fillets", "300g asparagus spears", "2 tbsp olive oil", "1 lemon, sliced", "2 cloves garlic, minced", "Salt and pepper to taste"],
       "preparing_time": "30 minutes",
       "calories": "320 calories",
-      "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "image": "https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": "6",
@@ -51,7 +51,7 @@
       "ingredients": ["200g all-purpose flour", "150g unsalted butter, softened", "100g brown sugar", "100g granulated sugar", "1 egg", "1 tsp vanilla extract", "150g chocolate chips"],
       "preparing_time": "45 minutes",
       "calories": "150 calories",
-      "image": "https://unsplash.com/photos/chocolate-ice-cream-on-brown-cone-98Kk8vwPbgs"
+      "image": "https://images.unsplash.com/photo-1583743089695-4b816a340f82?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ]
   
